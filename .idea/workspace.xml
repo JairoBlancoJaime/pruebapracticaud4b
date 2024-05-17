@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4924cbe-497e-42d5-8035-47d9055b38bf" name="Changes" comment="inicial">
+    <list default="true" id="a4924cbe-497e-42d5-8035-47d9055b38bf" name="Changes" comment="Tested">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/iesvdm/sudoku/SudokuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/iesvdm/sudoku/SudokuTest.java" afterDir="false" />
     </list>
@@ -144,8 +144,17 @@
       <updated>1715841695703</updated>
       <workItem from="1715841696736" duration="9923000" />
       <workItem from="1715873916029" duration="12533000" />
-      <workItem from="1715926837675" duration="4802000" />
+      <workItem from="1715926837675" duration="6885000" />
     </task>
+    <task id="LOCAL-00001" summary="Tested">
+      <option name="closed" value="true" />
+      <created>1715931668477</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715931668477</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,18 +162,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="inicial" />
-    <option name="LAST_COMMIT_MESSAGE" value="inicial" />
+    <MESSAGE value="Tested" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tested" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/iesvdm/sudoku/Sudoku.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="org.iesvdm.sudoku.Sudoku" memberName="board" />

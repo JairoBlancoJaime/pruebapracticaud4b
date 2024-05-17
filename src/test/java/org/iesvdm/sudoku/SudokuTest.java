@@ -26,6 +26,11 @@ public class SudokuTest {
         sudoku.fillBoardRandomly();
         sudoku.printBoard();
 
+        for (int i = 0; i < sudoku.getGridSize(); i++) {
+            for (int j = 0; j < sudoku.getGridSize(); j++) {
+
+            }
+        }
     }
 
     /*
@@ -63,6 +68,7 @@ public class SudokuTest {
         Sudoku sudoku = new Sudoku();
         sudoku.fillBoardSolvable();
         sudoku.printBoard();
+
     }
 
     /*
@@ -111,5 +117,10 @@ public class SudokuTest {
         sudoku.solveBoard();
         sudoku.printBoard();
 
+        for (int row = 0; row < sudoku.getGridSize(); row++) {
+            for (int column = 0; column < sudoku.getGridSize(); column++) {
+                
+            }
+        }
     }
 }
