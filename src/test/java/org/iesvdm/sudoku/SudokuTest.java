@@ -12,7 +12,6 @@ public class SudokuTest {
     void failTest() {
         Sudoku sudoku = new Sudoku();
         sudoku.fillBoardBasedInCluesRandomlySolvable();
-        sudoku.fillBoardBasedInCluesRandomly();
         sudoku.printBoard();
     }
 
@@ -39,12 +38,35 @@ public class SudokuTest {
     y que se cumpla la cantidad de pistas.
     */
     @Test
-    void fillBoardBasedInCluesRandomlyTest() {
+    void fillBoardBasedInCluesRandomly() {
         Sudoku sudoku = new Sudoku();
+        // Creamos una matriz de 9x9.
+        int[][] board = new int[9][9];
+        // Iniciamos un contador para las pistas.
+        int count = 0;
+        // Añadimos una cantidad de pistas.
+        int numClues = 40;
+
+        // Seteamos la tabla.
+        sudoku.setBoard(board);
+        // Seteamos los numeros de pistas.
+        sudoku.setNumClues(numClues);
+        // Rellenamos la matriz.
         sudoku.fillBoardBasedInCluesRandomly();
-        sudoku.printBoard();
 
-
+        // Creamos un bucle para que recorra el array verticalmente.
+        for (int i = 0; i < 9; i++) {
+            // Creamos un bucle para que recorra el array horizontalmente.
+            for (int j = 0; j < 9; j++) {
+                //Establecemos una condicion para comprobar que el numero este comprendido entre 1 y 9.
+                if (board[i][j] != 0) {
+                    // Realizamos el assertion para verificar que este dentro del rango entre 1 y 9.
+                    assertThat(count).isBetween(1, 9);
+                } // if
+            } // for (j)
+        } // for (i)
+        // Realizamos el assertion para contar los numeros de pistas.
+        assertThat(count).isEqualTo(numClues);
     }
 
     /*
@@ -52,10 +74,17 @@ public class SudokuTest {
     para verificar que se pase correctamente la solucion.
     */
     @Test
-    void fillBoardBasedInCluesRandomlySolvableTest() {
+    void fillBoardBasedInCluesRandomlySolvable() {
         Sudoku sudoku = new Sudoku();
+        // Creamos una matriz de 9x9.
+        int[][] board = new int[9][9];
+
+        // Seteamos la tabla.
+        sudoku.setBoard(board);
+        // Rellenamos la tabla ya solucionada.
         sudoku.fillBoardBasedInCluesRandomlySolvable();
-        sudoku.printBoard();
+        // Realizamos el assertion para verificar que sea solucionable.
+        assertThat(sudoku.solveBoard()).isEqualTo(true);
 
     }
 
@@ -64,10 +93,15 @@ public class SudokuTest {
     para verificar si la solucion que plantea, es correcta.
     */
     @Test
-    void fillBoardSolvableTest() {
+    void fillBoardSolvable() {
         Sudoku sudoku = new Sudoku();
+        // Creamos una matriz de 9x9.
+        int[][] board = new int[9][9];
+
+        // Seteamos la tabla.
+        sudoku.setBoard(board);
+        // Rellenamos la tabla
         sudoku.fillBoardSolvable();
-        sudoku.printBoard();
 
     }
 
@@ -78,8 +112,8 @@ public class SudokuTest {
     @Test
     void isNumberInRowTest() {
         Sudoku sudoku = new Sudoku();
-        sudoku.isNumberInRow(0, 8);
-        sudoku.printBoard();
+        // Creamos una matriz de 9x9.
+        int[][] board = new int[9][9];
 
     }
 
